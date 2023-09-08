@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Calculator
 {
 	public static void main(String[] args) {
-		System.out.println("Hi,I am a Calculator.. Enter two numbers.")
+		System.out.println("Enter two numbers.")
 	    Scanner sc=new Scanner(System.in);
 	    float a=sc.nextFloat();
 	    float b=sc.nextFloat();
