@@ -10,6 +10,7 @@ public class Calculator
 	    sub(a,b);
 	    mul(a,b);
 	    div(a,b);
+		mod(a,b);
 	}
 
 	    
@@ -30,6 +31,11 @@ public class Calculator
 		    float f=a/b;
 		    System.out.println(f);
 		}
-	
+
+		public static void mod(float a,float b)
+		{
+			float g=a%b;
+			System.out.println(g);
+		}
 
 }
