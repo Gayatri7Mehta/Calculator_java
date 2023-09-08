@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'javac Calculator.java'
+                bat 'javac Calculator.java'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'java Calculator'
+                bat 'java Calculator'
             }
         }
     }
