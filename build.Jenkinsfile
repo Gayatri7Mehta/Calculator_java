@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    tools{
+    maven 'MAVEN_HOME'
+    }
     stages {
         stage('Checkout'){
             steps {
@@ -9,7 +11,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn build'
+                sh 'mvn install'
             }
         }
 
