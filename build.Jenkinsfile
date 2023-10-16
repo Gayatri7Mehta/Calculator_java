@@ -2,17 +2,27 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout'){
+            steps {
+                checkout scm
+            }
+        }
         stage('Build') {
             steps {
-                sh 'javac Calculator.java'
+                sh 'mvn build'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'java Calculator'
+                sh 'mvn test'
             }
         }
+       stage('Deploy'){
+            steps {
+                sh 'mvn deploy'
+            }
+       }
     }
 
     post {
