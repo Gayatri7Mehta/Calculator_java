@@ -6,7 +6,7 @@ push:
 
 branches:
 
-- main # Change this to your main branch name
+- modulo # Change this to your main branch name
 
 jobs:
 
